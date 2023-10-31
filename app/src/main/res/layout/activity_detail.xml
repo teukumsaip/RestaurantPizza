@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/order_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Detail"
+        android:textSize="20sp"
+        android:textColor="#733F0E"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"/>
+
+    <TextView
+        android:id="@+id/outputDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/order_detail"/>
+
+    <TextView
+        android:id="@+id/pengiriman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengiriman"
+        android:textSize="20sp"
+        android:textColor="#733F0E"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_below="@id/outputDetail"/>
+
+    <CheckBox
+        android:id="@+id/pickupCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambil Sendiri"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_below="@id/pengiriman"
+        />
+
+    <CheckBox
+        android:id="@+id/deliveryCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fast Delivery (minimal 30 menit sampai)"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_below="@id/pickupCheckbox"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deliveryCheckbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Done"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        style="@style/Widget.MaterialComponents.Button"/>
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/greetings"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:background="#C4C4C4"
+        android:padding="16dp"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/done"/>
+
+</RelativeLayout>
